@@ -10,16 +10,28 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="box">
       <form class="typeCity" id="search-city">
         <div class="row">
           <div class="col-9">
-            <input class="form" type="search" placeholder="Type a city..." id="searchCityInput"/>
+            <input
+              class="form"
+              type="search"
+              placeholder="Type a city..."
+              id="searchCityInput"
+            />
           </div>
           <div class="col-3">
             <input type="submit" value="Search" class="buttonSearch" />
+            <input
+              type="button"
+              value="Current"
+              id="current"
+              class="buttonSearch"
+            />
           </div>
         </div>
       </form>
@@ -31,7 +43,10 @@
       <div class="row">
         <div class="col-6">
           <div class="left">
-            <img src="img/cloud_FILL0_wght400_GRAD0_opsz48.png" class="cloud" />
+            <img
+              src="src/img/cloud_FILL0_wght400_GRAD0_opsz48.png"
+              class="cloud"
+            />
 
             <div class="float-left">
               <span class="temperature" id="temperature">19</span>
@@ -51,6 +66,6 @@
         </div>
       </div>
     </div>
-    <script src="src/Index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

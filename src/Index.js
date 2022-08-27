@@ -64,21 +64,3 @@ function showPosition(position) {
 
 let currentButton = document.querySelector("#current");
 currentButton.addEventListener("click", currentCityWeather);
-
-//cambiar grados
-
-function toCelsius(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = 19;
-}
-let linkCelsius = document.querySelector("#celsius");
-linkCelsius.addEventListener("click", toCelsius);
-
-function toFahrenheit(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = 66;
-}
-let linkFahrenheit = document.querySelector("#fahrenheit");
-linkFahrenheit.addEventListener("click", toFahrenheit);
