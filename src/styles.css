@@ -94,3 +94,8 @@ div {
   position: relative;
   top: -35px;
 }
+footer {
+  display: block;
+  font-display: center;
+  text-align: center;
+}
